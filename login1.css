@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Gideon Roman', cursive;
+    height: 100%;
+}
+body{
+    font-family: 'Gideon Roman', cursive;
+    background-image: url('C:/Users/rapha/OneDrive/Documents/Email/login6/Assets/Images/170667a1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35vw;
+    height: 85vh;
+    border: 5px outset rgba(240, 240, 240, 0.363);
+    border-radius: 15px;
+    background-color: transparent;
+   backdrop-filter: blur(3px);
+   -webkit-backdrop-filter: blur(3px);
+   box-shadow: inset 0 0 55px 15px rgba(199, 199, 199, 0.849);
+   color: rgba(255, 255, 255, 0.596);
+   outline: 1px solid rgba(255, 255, 255, 0.445);
+   transition: all 300ms ease;
+}
+.formulario:hover{
+    backdrop-filter: blur(2px);
+   -webkit-backdrop-filter: blur(2px);
+   box-shadow: inset 0 0 25px 1px rgba(199, 199, 199, 0.849);
+   color: rgb(255, 255, 255);
+   outline: 1px solid rgba(255, 255, 255, 0.445);
+}
+.person-check-fill{
+    display: block;
+    margin:auto;
+}
+h2{
+    display: inline;
+    margin:20% 40%;
+    font-size: 30px;
+    padding-top: -2px;
+    padding-bottom: 5px;
+}
+.input{
+    width: 95%;
+    position: relative;
+}
+.lab-nome::after, .lab-email::after{
+    content: '';
+    display: block;
+    width: 98% ;
+    height: 2px;
+    background-color: transparent;
+    outline: 1px solid rgba(255, 255, 255, 0.363);
+    margin: -40px 2px 40px 12px;
+}
+.nome, .email{
+    display: inline-block;
+    width: 95%;
+    margin: 30px 1px 25px 12px;
+    padding: 15px 0;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+.nome:focus::placeholder, .nome:valid::placeholder, .email:focus::placeholder, .email:valid::placeholder{
+    transform: translateY(-18px);
+    transition: all 300ms ease-in-out;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    visibility: 100%;
+    background-color: transparent;
+    filter: contrast(4);
+}
+.nome::placeholder, .email::placeholder{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    transition: all 300ms ease;
+}
+.enviar{
+    display: block;
+    margin: auto;
+    padding: 20px 40px;
+    outline: none;
+    background-color: rgba(145, 215, 243, 0.247);
+    color: rgba(255, 255, 255, 0.699);
+    border: 3px outset rgba(240, 240, 240, 0.425);
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.enviar:focus{
+    outline: 1px solid rgba(253, 253, 253, 0.76);
+    border: 3px outset rgba(125, 133, 247, 0.452);
+    background-color: rgba(145, 215, 243, 0.541);
+    color: rgb(86, 50, 245);
+    filter: contrast(3);
+    font-weight: 600;
+}
+.enviar:hover{
+    outline: 1px solid rgba(126, 117, 255, 0.63);
+    border: 3px outset rgba(125, 133, 247, 0.452);
+    background-color: rgba(145, 215, 243, 0.541);
+    color: rgb(86, 50, 245);
+    filter: contrast(3);
+    font-weight: 600;
+}
+.links1{
+    width: 45%;
+    display: inline;
+    float: left;
+    margin:8px 4px 0 15px;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+.links2{
+    width: 45%;
+    display: inline;
+    float: right;
+    margin: 5px 15px -1px 0;
+    padding-top: 4.5px;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+.links2 p{
+    margin-left: 40px;
+}
+.link1{
+    position: relative;
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    transition: all 300ms ease;
+    outline: none;
+}
+.link1:hover{
+    color: red;
+    font-weight: 600;
+}
+.link1:focus{
+    color: red;
+    outline: .5px solid transparent;
+    font-weight: 600;
+}
+.link2{
+    margin-left: 110px;
+    margin-top: 4px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.87);
+    outline: none;
+    transition: all 300ms ease;
+}
+.link2:hover{
+    color: rgb(62, 62, 252);
+    filter: contrast(3);
+    font-weight: 600;
+    outline: 1px solid transparent;
+    border: none;
+}
+.link2:focus{
+   filter: contrast(3);
+   border: none;
+    border-radius: 50%;
+    color: rgb(62, 62, 252);
+    outline: 1px solid transparent;
+}
+.-google, .-facebook{
+    min-width: 10%;
+    max-width: 15%;
+}
+.-facebook:hover, .-facebook:focus{
+    background-color: rgba(255, 255, 255, 0.397);
+    border-radius: 50%;
+    color: rgb(62, 62, 252);
+    outline: 1px solid transparent;
+    transition: all 300ms ease;
+}
+.active{
+   position: absolute;
+    max-width: 95%;
+    margin: -77px 0 50px 150px;
+    color: rgb(255, 255, 255);
+    filter: contrast(1.5);
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgba(252, 80, 36, 0.555);
+    border: 2px inset rgba(255, 255, 255, 0.349);
+    margin-top: 10px inherit;
+}
+@media (max-width: 1155px){
+    .formulario{
+        width: 75vw;
+        max-width: 450px;
+        margin: 0;
+        padding: 0;
+    }
+    .links1{
+    display: inline;
+    margin: auto;
+    padding: 0;
+    }
+    .links2{
+        margin: 10px -90px 10px 15px;
+        padding: 0;
+    }
+    .links1 p, .links2 p{
+        display: none;
+    }
+    .link2{
+        margin:-85px 10px 10px 10px;
+        
+    }
+    .-google{
+        margin: 10px auto;
+        width: 50%;
+        height: 50%;
+    }
+ 
+}
+@media (max-width: 320px){
+    form{
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-width:530px){
+    .links2{
+        margin-right: -15% ;
+        padding: 0;
+    }
+    .active{
+        margin-left: 90px;
+    }
+}
+@media (min-width: 1156px) and (max-width: 1355px){
+    .links2 p{
+        font-size: 14px;
+        margin-left: 30px;
+        padding-left: 0;
+    }
+}
